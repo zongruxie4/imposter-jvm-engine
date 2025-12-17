@@ -14,15 +14,15 @@ updates:
       prefix: "chore"
       include: "scope"
 
-  - package-ecosystem: gradle
-    directory: "/"
-    schedule:
-      interval: "daily"
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: "daily"
     target-branch: "develop"
     open-pull-requests-limit: 4
     labels:
       - "dependencies"
-      - "java"
+      - "python"
     commit-message:
       prefix: "chore"
       include: "scope"
