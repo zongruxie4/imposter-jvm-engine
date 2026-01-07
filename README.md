@@ -104,14 +104,11 @@ There are many ways to run Imposter.
 
 ---
 
-## Recent changes and Roadmap
-  
-For recent changes see the [Changelog](CHANGELOG.md), or view the [Roadmap](https://github.com/imposter-project/imposter/blob/main/docs/roadmap.md).
-
 ## Contributing
 
 - Pull requests are welcome.
-- PRs should target the `develop` branch.
+- For Imposter versions up to and including 4.x, see [imposter-jvm-engine](https://github.com/imposter-project/imposter-jvm-engine)
+- For Imposter version 5.x, see [imposter-go](https://github.com/imposter-project/imposter-go)
 
 ## Author
 
