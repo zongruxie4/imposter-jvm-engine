@@ -1,7 +1,6 @@
 # WireMock plugin
 
 * Plugin name: `wiremock`
-* Plugin class: `io.gatehill.imposter.plugin.wiremock.WiremockPluginImpl`
 
 ## Features
 

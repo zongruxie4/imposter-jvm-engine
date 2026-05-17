@@ -1,7 +1,6 @@
 # HBase plugin
 
 * Plugin name: `hbase`
-* Plugin class: `io.gatehill.imposter.plugin.hbase.HBasePluginImpl`
 
 ## Features
 

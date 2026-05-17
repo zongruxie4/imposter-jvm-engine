@@ -1,7 +1,6 @@
 # SFDC (Salesforce) plugin
 
 * Plugin name: `sfdc`
-* Plugin class: `io.gatehill.imposter.plugin.sfdc.SfdcPluginImpl`
 
 ## Features
 

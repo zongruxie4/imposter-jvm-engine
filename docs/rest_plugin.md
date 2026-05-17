@@ -1,7 +1,6 @@
 # REST plugin
 
 * Plugin name: `rest`
-* Plugin class: `io.gatehill.imposter.plugin.rest.RestPluginImpl`
 
 ## Features
 

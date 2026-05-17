@@ -1,7 +1,6 @@
 # SOAP plugin
 
 * Plugin name: `soap`
-* Plugin class: `io.gatehill.imposter.plugin.soap.SoapPluginImpl`
 
 This plugin provides support for SOAP web services, via WSDL files.
 
