@@ -1,6 +1,6 @@
 # Getting started
 
-There are many ways to run Imposter. There are two categories: run a standalone server, or embed it within unit/integration tests.
+There are many ways to run Imposter, falling into three categories: run a standalone mock server, embed it within unit/integration tests, or run it within your CI/CD pipeline.
 
 ### Standalone mock server
 
