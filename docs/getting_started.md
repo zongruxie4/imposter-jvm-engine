@@ -17,6 +17,7 @@ There are many ways to run Imposter, falling into three categories: run a standa
 ### Within your CI/CD pipeline
 
 - Use the [Imposter GitHub Actions](./github_actions.md) to start and stop Imposter during your CI/CD pipeline.
+- For other platforms (GitLab CI, CircleCI, Jenkins, Azure Pipelines, etc.) see [Running in CI/CD pipelines](./ci_cd.md).
 
 ---
 

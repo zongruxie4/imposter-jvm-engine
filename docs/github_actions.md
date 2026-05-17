@@ -2,6 +2,9 @@
 
 If you're using GitHub Actions for your CI/CD pipeline, you can run Imposter to mock your dependencies during testing.
 
+> **Note**
+> Using a different CI/CD platform? See [Running in CI/CD pipelines](./ci_cd.md) for GitLab CI, CircleCI, Jenkins, Azure Pipelines and others.
+
 <details markdown>
 <summary>Other ways to run Imposter</summary>
 
@@ -16,6 +19,10 @@ If you're using GitHub Actions for your CI/CD pipeline, you can run Imposter to 
 
 - Embed within your **Java/Kotlin/Scala/JVM** unit tests - see [JVM bindings](./embed_jvm.md)
 - Embed within your **JavaScript/Node.js** unit tests - see [JavaScript bindings](https://github.com/imposter-project/imposter-js)
+
+**Within your CI/CD pipeline**
+
+- On other CI/CD platforms (GitLab CI, CircleCI, Jenkins, Azure Pipelines, etc.) - see [Running in CI/CD pipelines](./ci_cd.md)
 
 </details>
 

@@ -66,6 +66,7 @@ To begin, check out the [Getting started](getting_started.md) guide. See the _Co
 - [Java JAR file](run_imposter_jar.md)
 - [Deployment patterns](./deployment_patterns.md)
 - [Running in GitHub Actions](./github_actions.md)
+- [Running in CI/CD pipelines](./ci_cd.md)
 
 ### Operational topics
 
