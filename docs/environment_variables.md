@@ -52,3 +52,19 @@ $ cat .env
 IMPOSTER_LOG_LEVEL=info
 OTHER_ENV_VAR=example
 ```
+
+## Referencing environment variables in configuration files
+
+In addition to the `IMPOSTER_*` variables above, you can reference any environment variable from within a plugin configuration file using `${env.NAME}` syntax. This is useful for injecting hostnames, paths, secrets, or other values without hard-coding them.
+
+```yaml
+plugin: rest
+resources:
+  - path: /example
+    response:
+      content: "${env.EXAMPLE_RESPONSE}"
+```
+
+A default can be provided with `${env.NAME:-defaultValue}`, which is used when the variable is empty or unset.
+
+For full details — including default values and the related `${var.NAME}` syntax for [configuration variables](./configuration.md#configuration-variables) — see [Configuration](./configuration.md#environment-variables).

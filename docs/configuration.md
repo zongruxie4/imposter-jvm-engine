@@ -284,6 +284,42 @@ ${env.MY_VAR:-foo}
 
 This would resolve to the value `foo` if the `MY_VAR` environment variable was empty or missing.
 
+## Configuration variables
+
+> **Available in Imposter 5 and later**
+
+For values shared across multiple resources in the same configuration file — like a common base path, host, or identifier — define them once in a top-level `vars` section and reference them inline with `${var.NAME}`.
+
+```yaml
+plugin: rest
+vars:
+  api_base_path: /api/v2
+  default_host: example.com
+
+resources:
+  - path: ${var.api_base_path}/users
+    response:
+      content: '{"host": "${var.default_host}"}'
+
+  - path: ${var.api_base_path}/items
+    response:
+      content: '{"host": "${var.default_host}"}'
+```
+
+Variables are resolved when the configuration file is loaded and can be used in any string-valued field — paths, response content, files, headers, and so on — across all plugins.
+
+### Default values for configuration variables
+
+Provide a fallback using the same `:-` syntax as environment variables:
+
+```
+${var.NAME_OF_VAR:-defaultValue}
+```
+
+If a variable is referenced but not defined and no default is provided, the placeholder is left intact and a warning is logged at startup.
+
+> Environment variables are substituted before configuration variables, so a `vars` value may itself contain an `${env.NAME}` reference.
+
 ## Security
 
 Imposter can require specific header values to authenticate incoming HTTP requests. [Read about how to do this](./security.md).
