@@ -65,6 +65,7 @@ docker build \
   "${ROOT_DIR}/docs"
 
 docker run "${RUN_OPTS[@]}" -p 8000:8000 \
+  -e NO_MKDOCS_2_WARNING=1 \
   -v "${ROOT_DIR}/mkdocs.yml:/docs/mkdocs.yml:ro" \
   -v "${ROOT_DIR}/docs:/docs/docs:ro" \
   imposter-docs
