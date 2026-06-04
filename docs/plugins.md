@@ -15,8 +15,8 @@ The following table describes the available plugins.
 | Mock           | `wiremock`        | WireMock mappings support.             | See [WireMock plugin](wiremock_plugin.md).                                                                                                       | 4.x                |
 | Scripting      | `js-graal`        | Graal.js scripting.                    | Graal.js JavaScript scripting support. This is the default JavaScript script engine. See [Modern JavaScript features](./scripting_modern_js.md). | 4.x                |
 | Scripting      | `js-nashorn`      | Nashorn scripting.                     | This is the legacy JavaScript script engine                                                                                                      | 4.x                |
-| Store          | `store-dynamodb`  | DynamoDB store implementation.         | See [DynamoDB store](https://github.com/imposter-project/imposter-jvm-engine/tree/main/store/dynamodb).                                          | 4.x                |
-| Store          | `store-redis`     | Redis store implementation.            | See [Redis store](https://github.com/imposter-project/imposter-jvm-engine/tree/main/store/redis).                                                | 4.x                |
+| Store          | `store-dynamodb`  | DynamoDB store implementation.         | Built-in (5.x). External plugin (4.x). See [DynamoDB store](https://github.com/imposter-project/imposter-jvm-engine/tree/main/store/dynamodb).                                          | 4.x                |
+| Store          | `store-redis`     | Redis store implementation.            | Built-in (5.x). External plugin (4.x). See [Redis store](https://github.com/imposter-project/imposter-jvm-engine/tree/main/store/redis).                                                | 4.x                |
 | Store          | `store-graphql`   | GraphQL store queries.                 | See [GraphQL](stores_graphql.md).                                                                                                                | 4.x                |
 | Configuration  | `config-detector` | Detects plugins from `*-config` files. | Built-in                                                                                                                                         | 4.x                |
 | Configuration  | `meta-detector`   | Detects plugins from `META-INF`.       | Built-in                                                                                                                                         | 4.x                |
@@ -44,7 +44,7 @@ Imposter 5.x requires you to also set the `IMPOSTER_EXTERNAL_PLUGINS` environmen
     IMPOSTER_EXTERNAL_PLUGINS=true
     IMPOSTER_PLUGIN_DIR="/path/to/dir/containing/plugins"
 
-See [imposter-go](https://github.com/imposter-project/imposter-go/tree/main/external/plugins) for available plugins.
+See [available plugins for Imposter 5](https://github.com/imposter-project/imposter-go/tree/main/external/plugins).
 
 ## Using the CLI
 
